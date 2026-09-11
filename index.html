@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova AI — Platform Otomasi Cerdas Generasi Baru</title>
+  <meta name="description" content="Nova AI membantu tim modern mengotomatiskan alur kerja bisnis, menganalisis data secara instan, dan meningkatkan produktivitas hingga 10x lipat.">
+  <meta name="keywords" content="AI, Artificial Intelligence, SaaS, Otomasi Bisnis, Produktivitas, Startup, Machine Learning">
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nova AI — Platform Otomasi Cerdas Generasi Baru">
+  <meta property="og:description" content="Otomatiskan alur kerja repetitif dan tingkatkan efisiensi tim Anda hingga 10x lipat dengan Nova AI.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow & Grid Overlay -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  <div class="grid-pattern-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" id="brand-logo">
+        <div class="logo-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
+            <path d="M9 16L15 10L21 16L15 22L9 16Z" fill="#FFFFFF" />
+            <path d="M15 6L23 14L15 22L7 14L15 6Z" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1.5" />
+            <circle cx="15" cy="16" r="3" fill="#6366F1" />
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8B5CF6"/>
+                <stop offset="0.5" stop-color="#6366F1"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-name">Nova<span class="text-gradient">.ai</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Fitur</a></li>
+          <li><a href="#how-it-works" class="nav-link">Cara Kerja</a></li>
+          <li><a href="#pricing" class="nav-link">Harga</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="#login" class="btn btn-ghost" id="login-btn">Masuk</a>
+        <a href="#pricing" class="btn btn-primary btn-glow" id="header-cta-btn">
+          <span>Mulai Gratis</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Buka Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#features" class="mobile-link">Fitur</a></li>
+        <li><a href="#how-it-works" class="mobile-link">Cara Kerja</a></li>
+        <li><a href="#pricing" class="mobile-link">Harga</a></li>
+        <li><a href="#testimonials" class="mobile-link">Testimoni</a></li>
+        <li><a href="#faq" class="mobile-link">FAQ</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <a href="#login" class="btn btn-ghost btn-block">Masuk</a>
+        <a href="#pricing" class="btn btn-primary btn-block">Mulai Uji Coba Gratis</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Announcement Pill -->
+        <div class="announcement-badge animate-fade-in" id="announcement-pill">
+          <span class="badge-sparkle">✨</span>
+          <span class="badge-text"><strong>Nova 2.0 Rilis:</strong> Model Otomasi Alur Kerja Terbaru</span>
+          <span class="badge-arrow">→</span>
+        </div>
+
+        <!-- Hero Typography -->
+        <h1 class="hero-title animate-fade-up">
+          Revolusi Produktivitas Tim Anda dengan <span class="text-gradient">Kecerdasan Buatan</span>
+        </h1>
+        <p class="hero-subtitle animate-fade-up delay-1">
+          Otomatiskan alur kerja kompleks, sintesis data bisnis dalam hitungan detik, dan bebaskan tim Anda untuk fokus pada inovasi yang bernilai tinggi.
+        </p>
+
+        <!-- CTA Action Group -->
+        <div class="hero-cta-group animate-fade-up delay-2">
+          <a href="#pricing" class="btn btn-primary btn-large btn-glow" id="hero-primary-cta">
+            <span>Mulai Uji Coba 14 Hari</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button class="btn btn-secondary btn-large" id="watch-demo-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Tonton Demo (2 Menit)</span>
+          </button>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="trust-pill-list animate-fade-up delay-3">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Tanpa Kartu Kredit</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Integrasi 2 Menit</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Keamanan Standar Perbankan SOC2</span>
+          </div>
+        </div>
+
+        <!-- Interactive Dashboard Mockup Showcase -->
+        <div class="hero-preview-wrapper animate-fade-up delay-4" id="dashboard-mockup">
+          <div class="preview-card-glow"></div>
+          <div class="dashboard-mockup-frame">
+            <!-- Window Header Bar -->
+            <div class="mockup-header-bar">
+              <div class="window-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+              </div>
+              <div class="mockup-search-bar">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Cari prompt, workflow automasi, atau data perusahaan...</span>
+                <kbd>⌘K</kbd>
+              </div>
+              <div class="mockup-status-badge">
+                <span class="status-dot"></span>
+                <span>Nova Core Active</span>
+              </div>
+            </div>
+
+            <!-- Window Inner Content -->
+            <div class="mockup-body">
+              <!-- Sidebar Visual -->
+              <div class="mockup-sidebar">
+                <div class="sidebar-item active">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                  <span>Dashboard</span>
+                </div>
+                <div class="sidebar-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                  <span>Alur Kerja</span>
+                </div>
+                <div class="sidebar-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                  <span>Model AI</span>
+                </div>
+                <div class="sidebar-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  <span>Integrasi</span>
+                </div>
+              </div>
+
+              <!-- Main Dashboard Canvas -->
+              <div class="mockup-main">
+                <div class="metrics-grid">
+                  <div class="metric-mini-card">
+                    <span class="m-label">Otomasi Berjalan</span>
+                    <div class="m-value-wrap">
+                      <span class="m-val">4.892</span>
+                      <span class="badge-growth">+48%</span>
+                    </div>
+                  </div>
+                  <div class="metric-mini-card">
+                    <span class="m-label">Jam Dihemat / Tim</span>
+                    <div class="m-value-wrap">
+                      <span class="m-val">128 Jam</span>
+                      <span class="badge-growth">+84%</span>
+                    </div>
+                  </div>
+                  <div class="metric-mini-card">
+                    <span class="m-label">Akurasi Prediksi</span>
+                    <div class="m-value-wrap">
+                      <span class="m-val">99.8%</span>
+                      <span class="badge-growth text-cyan">A+</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Interactive Live Chart Mockup -->
+                <div class="chart-container-mock">
+                  <div class="chart-header">
+                    <div>
+                      <h4>Performa Produktivitas Real-Time</h4>
+                      <p class="chart-sub">Perbandingan sebelum & sesudah implementasi Nova AI</p>
+                    </div>
+                    <div class="chart-pills">
+                      <span class="active">7 Hari</span>
+                      <span>30 Hari</span>
+                      <span>1 Tahun</span>
+                    </div>
+                  </div>
+                  
+                  <div class="svg-chart-wrapper">
+                    <svg viewBox="0 0 500 160" preserveAspectRatio="none" class="chart-svg">
+                      <defs>
+                        <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#6366f1" stop-opacity="0.4"/>
+                          <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M0,140 Q60,110 120,120 T240,65 T360,40 T500,10 L500,160 L0,160 Z" fill="url(#chartGrad)" />
+                      <path d="M0,140 Q60,110 120,120 T240,65 T360,40 T500,10" fill="none" stroke="url(#logo-grad)" stroke-width="3.5" stroke-linecap="round" />
+                      <!-- Chart Nodes -->
+                      <circle cx="240" cy="65" r="5" fill="#6366f1" stroke="#ffffff" stroke-width="2" />
+                      <circle cx="360" cy="40" r="5" fill="#8b5cf6" stroke="#ffffff" stroke-width="2" />
+                      <circle cx="500" cy="10" r="6" fill="#06b6d4" stroke="#ffffff" stroke-width="2" class="pulsing-node" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Metric Overlay Badges -->
+            <div class="floating-badge badge-revenue">
+              <div class="float-icon-wrap green">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              </div>
+              <div class="float-content">
+                <span class="float-title">Efisiensi Biaya</span>
+                <strong class="float-value">Hemat Rp 84.500.000 / bln</strong>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-ai-agent">
+              <div class="float-icon-wrap indigo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              </div>
+              <div class="float-content">
+                <span class="float-title">Tugas Otomatis</span>
+                <strong class="float-value">Selesai dalam 0.4 detik ⚡</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOGO MARQUEE / SOCIAL PROOF -->
+    <section class="social-proof-section" aria-label="Mitra Perusahaan">
+      <div class="container">
+        <p class="social-proof-heading">DIPERCAYA OLEH LEBIH DARI 10,000+ TIM INOVATIF DI SELURUH DUNIA</p>
+        <div class="marquee-track-container">
+          <div class="marquee-track">
+            <span class="brand-item">⚡ HYPERSCALE</span>
+            <span class="brand-item">◈ QUANTUM LABS</span>
+            <span class="brand-item">❖ VERTEX GLOBAL</span>
+            <span class="brand-item">▲ NEXUS FLOW</span>
+            <span class="brand-item">● ALPHA STREAM</span>
+            <span class="brand-item">■ SYNAPSE AI</span>
+            <!-- Duplicate for seamless scroll -->
+            <span class="brand-item">⚡ HYPERSCALE</span>
+            <span class="brand-item">◈ QUANTUM LABS</span>
+            <span class="brand-item">❖ VERTEX GLOBAL</span>
+            <span class="brand-item">▲ NEXUS FLOW</span>
+            <span class="brand-item">● ALPHA STREAM</span>
+            <span class="brand-item">■ SYNAPSE AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FEATURES SECTION -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">FITUR UNGGULAN</span>
+        </div>
+        <h2 class="section-title">Dibangun Khusus untuk Kecepatan & Presisi</h2>
+        <p class="section-desc">Platform cerdas all-in-one yang mengintegrasikan kecerdasan buatan langsung ke jantung operasi harian perusahaan Anda.</p>
+
+        <!-- Feature Grid (Interactive Cards with Dynamic Glow) -->
+        <div class="feature-grid">
+          
+          <!-- Card 1 -->
+          <div class="feature-card interactive-glow-card" id="feature-1">
+            <div class="feature-icon-box gradient-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">Otomasi Alur Kerja Instan</h3>
+            <p class="feature-text">Bangun pipeline otomasi dari data mentah ke aksi nyata tanpa satu baris kode pun. Cukup deskripsikan dalam bahasa natural.</p>
+            <div class="feature-link">Pelajari otomasi →</div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card interactive-glow-card" id="feature-2">
+            <div class="feature-icon-box gradient-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Analitik Prediktif Real-Time</h3>
+            <p class="feature-text">Deteksi tren sebelum kompetitor mengetahuinya. Model prediktif Nova membaca pola metrik dan memberikan rekomendasi strategis.</p>
+            <div class="feature-link">Eksplor analitik →</div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card interactive-glow-card" id="feature-3">
+            <div class="feature-icon-box gradient-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">100+ Ekosistem Integrasi</h3>
+            <p class="feature-text">Tersambung langsung ke Slack, WhatsApp Business, Notion, Jira, GitHub, Salesforce, dan Google Workspace dalam hitungan klik.</p>
+            <div class="feature-link">Lihat semua integrasi →</div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card interactive-glow-card" id="feature-4">
+            <div class="feature-icon-box gradient-4">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Keamanan Standar Enterprise</h3>
+            <p class="feature-text">Enkripsi data end-to-end (AES-256), perlindungan kepatuhan SOC-2 Type II, dan jaminan bahwa data Anda tidak pernah dipakai melatih model publik.</p>
+            <div class="feature-link">Kebijakan privasi →</div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card interactive-glow-card" id="feature-5">
+            <div class="feature-icon-box gradient-5">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Kolaborasi Multi-Agen Cerdas</h3>
+            <p class="feature-text">Bekerja bersama agen AI spesialis: agen riset data, agen penulisan laporan, dan agen kueri database yang berkoordinasi otomatis.</p>
+            <div class="feature-link">Coba multi-agent →</div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card interactive-glow-card" id="feature-6">
+            <div class="feature-icon-box gradient-6">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Kecepatan Inferensi &lt; 200ms</h3>
+            <p class="feature-text">Didukung infrastruktur GPU global terdistribusi untuk memastikan latensi minimal pada setiap panggilan API dan eksekusi tugas.</p>
+            <div class="feature-link">Cek status server →</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS / INTERACTIVE WORKFLOW SPOTLIGHT -->
+    <section class="how-it-works-section" id="how-it-works">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">CARA KERJA</span>
+        </div>
+        <h2 class="section-title">Hanya 3 Langkah Mudah Menuju Efisiensi</h2>
+        <p class="section-desc">Mulai tanpa hambatan teknis. Hubungkan sistem Anda dan biarkan Nova AI bekerja.</p>
+
+        <!-- Steps Showcase -->
+        <div class="steps-wrapper">
+          
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Sambungkan Sumber Data</h3>
+              <p>Hubungkan basis data, dokumen PDF, CRM, atau akun spreadsheet Anda dengan integrasi sekali-klik yang aman.</p>
+            </div>
+            <div class="step-badge">1 Menit Setup</div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Tentukan Target & Alur Kerja</h3>
+              <p>Gunakan antarmuka drag-and-drop atau ketik instruksi sederhana untuk menyusun alur kerja otomatis yang Anda butuhkan.</p>
+            </div>
+            <div class="step-badge">No-Code Friendly</div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Jalankan & Pantau Hasil</h3>
+              <p>Biarkan agen Nova AI menangani pekerjaan berulang 24/7 dengan laporan kemajuan dan notifikasi instan langsung di Slack/Email.</p>
+            </div>
+            <div class="step-badge">Otomasi 24/7</div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Interactive Tab Demonstration -->
+        <div class="interactive-demo-box">
+          <div class="demo-nav-tabs" role="tablist">
+            <button class="demo-tab active" data-tab="prompt" role="tab" aria-selected="true">💬 Natural Language Command</button>
+            <button class="demo-tab" data-tab="workflow" role="tab" aria-selected="false">⚡ Workflow Builder</button>
+            <button class="demo-tab" data-tab="analytics" role="tab" aria-selected="false">📊 Laporan Instan</button>
+          </div>
+          
+          <div class="demo-tab-contents">
+            <!-- Tab 1 -->
+            <div class="tab-pane active" id="tab-prompt">
+              <div class="code-terminal-mock">
+                <div class="terminal-bar">
+                  <span class="term-title">Nova Terminal Command</span>
+                  <span class="term-status">Ready</span>
+                </div>
+                <div class="terminal-code">
+                  <p><span class="tok-comment">// Perintah input pengguna:</span></p>
+                  <p><span class="tok-user">&gt;</span> <span class="tok-keyword">"Kumpulkan lead baru dari HubSpot hari ini, verifikasi email via Hunter, dan kirim personalized intro di LinkedIn"</span></p>
+                  <p class="terminal-response"><span class="tok-sparkle">✨ Nova Engine:</span> 48 lead terdeteksi. 46 email tervalidasi. 46 draf pesan dipersonalisasi siap dikirim dalam 1.2 detik.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="tab-pane" id="tab-workflow">
+              <div class="code-terminal-mock">
+                <div class="terminal-bar">
+                  <span class="term-title">Automated Event Pipeline</span>
+                  <span class="term-status">Live Stream</span>
+                </div>
+                <div class="terminal-code">
+                  <p><span class="tok-comment">// Alur kerja yang sedang aktif:</span></p>
+                  <p><span class="tok-node">[Webhook Baru]</span> ➔ <span class="tok-node">[AI Filter Spam]</span> ➔ <span class="tok-node">[Ekstraksi PDF Invoice]</span> ➔ <span class="tok-node">[Update Xero & Kirim Notif Slack]</span></p>
+                  <p class="terminal-response"><span class="tok-sparkle">✓ Sukses:</span> Pipeline dieksekusi 1.420x hari ini tanpa kegagalan (100% Uptime).</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="tab-pane" id="tab-analytics">
+              <div class="code-terminal-mock">
+                <div class="terminal-bar">
+                  <span class="term-title">AI Summary Synthesis</span>
+                  <span class="term-status">Generated in 180ms</span>
+                </div>
+                <div class="terminal-code">
+                  <p><span class="tok-comment">// Ringkasan eksekutif mingguan:</span></p>
+                  <p>• Pendapatan mingguan melonjak <strong>+24.5%</strong> didorong konversi campaign otomatis Q3.</p>
+                  <p>• Beban CS turun <strong>62%</strong> berkat respon instan Nova AI Agent pada jam luar kantor.</p>
+                  <p class="terminal-response"><span class="tok-sparkle">💡 Rekomendasi:</span> Tingkatkan kuota bandwidth webhook untuk mengantisipasi flash sale akhir pekan.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING SECTION (INTERACTIVE TOGGLE) -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">PILIHAN HARGA</span>
+        </div>
+        <h2 class="section-title">Investasi Terukur untuk Skala Bisnis Anda</h2>
+        <p class="section-desc">Mulai gratis 14 hari tanpa risiko. Tingkatkan atau batalkan paket kapan saja.</p>
+
+        <!-- Billing Toggle -->
+        <div class="pricing-toggle-container">
+          <span class="toggle-label" id="monthly-label">Tagihan Bulanan</span>
+          <label class="switch" for="pricing-toggle-input">
+            <input type="checkbox" id="pricing-toggle-input" aria-label="Toggle Tagihan Tahunan">
+            <span class="slider"></span>
+          </label>
+          <span class="toggle-label" id="yearly-label">Tagihan Tahunan <span class="discount-pill">Hemat 25% 🔥</span></span>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-grid">
+          
+          <!-- Tier 1: Starter -->
+          <div class="pricing-card" id="pricing-starter">
+            <div class="tier-header">
+              <h3 class="tier-name">Starter</h3>
+              <p class="tier-desc">Sangat cocok untuk freelancer dan tim kecil yang baru mulai otomatisasi.</p>
+              <div class="price-display">
+                <span class="currency">Rp</span>
+                <span class="amount" data-monthly="199.000" data-yearly="149.000">199.000</span>
+                <span class="period">/bulan</span>
+              </div>
+              <p class="billing-note" data-monthly="Ditagih setiap bulan" data-yearly="Ditagih tahunan (Rp 1.788.000/thn)">Ditagih setiap bulan</p>
+            </div>
+            
+            <a href="#signup" class="btn btn-secondary btn-block">Mulai Uji Coba Gratis</a>
+            
+            <div class="tier-features">
+              <p class="features-label">Semua yang Anda butuhkan:</p>
+              <ul class="feature-checklist">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Hingga 5 Alur Kerja Otomatis</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 50.000 Kredit Token AI/bln</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Integrasi 5 Aplikasi Dasar</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dukungan Komunitas & Email</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tier 2: Pro (Featured / Popular) -->
+          <div class="pricing-card popular" id="pricing-pro">
+            <div class="popular-ribbon">PALING DIMINATI</div>
+            <div class="tier-header">
+              <h3 class="tier-name">Professional</h3>
+              <p class="tier-desc">Pilihan terbaik untuk startup bertumbuh dan perusahaan yang butuh kekuatan penuh.</p>
+              <div class="price-display">
+                <span class="currency">Rp</span>
+                <span class="amount" data-monthly="499.000" data-yearly="374.000">499.000</span>
+                <span class="period">/bulan</span>
+              </div>
+              <p class="billing-note" data-monthly="Ditagih setiap bulan" data-yearly="Ditagih tahunan (Rp 4.488.000/thn)">Ditagih setiap bulan</p>
+            </div>
+
+            <a href="#signup" class="btn btn-primary btn-glow btn-block">Mulai Uji Coba Gratis</a>
+
+            <div class="tier-features">
+              <p class="features-label">Semua fitur Starter, ditambah:</p>
+              <ul class="feature-checklist">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Alur Kerja Tanpa Batas</strong></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>500.000 Kredit Token AI/bln</strong></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Akses ke Semua 100+ Integrasi</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Kolaborasi Tim Hingga 10 Anggota</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Prioritas Support via WhatsApp & Chat</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tier 3: Enterprise -->
+          <div class="pricing-card" id="pricing-enterprise">
+            <div class="tier-header">
+              <h3 class="tier-name">Enterprise</h3>
+              <p class="tier-desc">Solusi dedikasi dengan kepatuhan tinggi untuk korporasi skala besar.</p>
+              <div class="price-display">
+                <span class="currency">Rp</span>
+                <span class="amount" data-monthly="1.499.000" data-yearly="1.199.000">1.499.000</span>
+                <span class="period">/bulan</span>
+              </div>
+              <p class="billing-note" data-monthly="Ditagih setiap bulan" data-yearly="Ditagih tahunan (Rp 14.388.000/thn)">Ditagih setiap bulan</p>
+            </div>
+
+            <a href="#contact-sales" class="btn btn-secondary btn-block">Hubungi Tim Sales</a>
+
+            <div class="tier-features">
+              <p class="features-label">Semua keunggulan Pro, ditambah:</p>
+              <ul class="feature-checklist">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Kuota Token & Eksekusi Kustom</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Model Fine-Tuning Mandiri</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> SLA Keandalan Server 99.99%</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Account Manager 24/7</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> On-Premise Deployment Option</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">TESTIMONI PENGGUNA</span>
+        </div>
+        <h2 class="section-title">Apa Kata Pemimpin Bisnis Terkemuka?</h2>
+        <p class="section-desc">Ribuan perusahaan mempercayai Nova AI untuk mengakselerasi pertumbuhan operasional mereka.</p>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">"Sebelum menggunakan Nova AI, tim customer success kami menghabiskan 4 jam sehari menyalin data tiket dan menyusun laporan. Sekarang semua selesai otomatis sebelum kami tiba di kantor."</p>
+            <div class="reviewer-meta">
+              <div class="avatar avatar-1">RA</div>
+              <div class="reviewer-info">
+                <strong>Raditya Ardiansyah</strong>
+                <span>VP of Operations, PayNexus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card featured-testimonial">
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">"Efisiensi yang dihasilkan Nova AI sungguh luar biasa. Kami berhasil melipatgandakan output tim marketing tanpa menambah headcount. Nilai ROI-nya mencapai 400% dalam 2 bulan pertama!"</p>
+            <div class="reviewer-meta">
+              <div class="avatar avatar-2">SN</div>
+              <div class="reviewer-info">
+                <strong>Siti Nurhaliza</strong>
+                <span>Chief Growth Officer, ScaleUp Media</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">"Standar keamanan dan kepatuhan privasi datanya menjadi pembeda utama. Sebagai fintech, kami sangat ketat dengan perlindungan data nasabah, dan Nova AI memenuhi seluruh standar audit kami."</p>
+            <div class="reviewer-meta">
+              <div class="avatar avatar-3">DH</div>
+              <div class="reviewer-info">
+                <strong>Dimas Hendrawan</strong>
+                <span>Head of Engineering, FinSecure ID</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (INTERACTIVE ACCORDION) -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-badge-wrapper">
+          <span class="section-badge">PERTANYAAN UMUM</span>
+        </div>
+        <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+        <p class="section-desc">Punya pertanyaan seputar Nova AI? Temukan jawabannya di bawah ini atau hubungi tim support kami.</p>
+
+        <div class="faq-accordion-wrapper" id="faq-accordion">
+          
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Apakah saya membutuhkan keahlian coding untuk menggunakan Nova AI?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Sama sekali tidak! Nova AI dirancang untuk siapa saja. Anda dapat membuat alur kerja yang kompleks cukup dengan mendeskripsikannya dalam bahasa sehari-hari atau menggunakan visual drag-and-drop builder kami.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Bagaimana dengan keamanan dan kerahasiaan data perusahaan saya?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Keamanan adalah prioritas nomor satu kami. Seluruh data dienkripsi dengan standar AES-256 saat transit dan rest. Kami terverifikasi SOC-2 Type II dan GDPR compliant. Data Anda 100% milik Anda dan tidak akan pernah digunakan untuk melatih model AI umum.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Bagaimana cara kerja uji coba gratis 14 hari?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Anda mendapatkan akses penuh ke semua fitur paket Pro selama 14 hari. Anda tidak perlu memasukkan kartu kredit saat pendaftaran. Di akhir masa uji coba, Anda bebas memilih untuk berlangganan atau akun Anda akan otomatis beralih ke versi gratis.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Apakah Nova AI bisa diintegrasikan dengan sistem internal (kustom) kami?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Ya. Selain menyediakan 100+ integrasi bawaan siap pakai (Slack, Google, Jira, HubSpot), kami juga menyediakan REST API dan Webhook yang komprehensif untuk menghubungkan sistem internal kustom atau database on-premise Anda.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Apakah saya bisa membatalkan atau mengubah paket kapan saja?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Tentu saja. Anda dapat melakukan upgrade, downgrade, atau membatalkan langganan kapan pun langsung melalui dasbor billing akun Anda tanpa penalti atau biaya tersembunyi.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONVERSION CTA BANNER -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-card">
+          <div class="cta-bg-glow" aria-hidden="true"></div>
+          <h2 class="cta-banner-title">Siap Membawa Produktivitas Tim ke Level Berikutnya?</h2>
+          <p class="cta-banner-desc">Bergabunglah dengan lebih dari 10.000 tim yang telah mengotomatiskan jutaan jam kerja bersama Nova AI.</p>
+          
+          <form class="cta-email-form" id="newsletter-form">
+            <div class="input-glow-group">
+              <input type="email" id="user-email-input" placeholder="Masukkan alamat email kantor Anda..." required>
+              <button type="submit" class="btn btn-primary btn-glow" id="cta-submit-btn">
+                <span>Mulai Sekarang</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </form>
+          <p class="cta-footnote">Uji coba gratis 14 hari • Tanpa kartu kredit • Siap dalam 2 menit</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <div class="logo-icon-wrap footer-logo">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad-footer)" />
+            <path d="M9 16L15 10L21 16L15 22L9 16Z" fill="#FFFFFF" />
+            <defs>
+              <linearGradient id="logo-grad-footer" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8B5CF6"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-name">Nova<span class="text-gradient">.ai</span></span>
+        </div>
+        <p class="footer-bio">Platform orkestrasi kecerdasan buatan terdepan untuk efisiensi dan automasi bisnis tanpa batas.</p>
+        <div class="system-status-indicator">
+          <span class="status-pulse"></span>
+          <span>Semua sistem beroperasi normal (99.99%)</span>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Produk</h4>
+        <ul>
+          <li><a href="#features">Alur Kerja Otomatis</a></li>
+          <li><a href="#features">Agen AI Cerdas</a></li>
+          <li><a href="#features">Integrasi Ekosistem</a></li>
+          <li><a href="#pricing">Model Harga</a></li>
+          <li><a href="#">Dokumentasi API</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Solusi</h4>
+        <ul>
+          <li><a href="#">Untuk Startup</a></li>
+          <li><a href="#">Untuk Korporasi</a></li>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Pemasaran & Sales</a></li>
+          <li><a href="#">Operasional IT</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Karir <span class="badge-hiring">Hiring</span></a></li>
+          <li><a href="#">Blog & Riset</a></li>
+          <li><a href="#">Kontak Media</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Keamanan & Legal</h4>
+        <ul>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+          <li><a href="#">Kepatuhan SOC-2</a></li>
+          <li><a href="#">GDPR Compliance</a></li>
+          <li><a href="#">Security Bounty</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom-bar">
+      <p>© 2026 Nova AI Technologies Inc. Hak Cipta Dilindungi Undang-Undang.</p>
+      <div class="footer-social-icons">
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="GitHub">gh</a>
+        <a href="#" aria-label="Discord">dc</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VIDEO DEMO MODAL -->
+  <div class="modal-backdrop" id="demo-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Tutup Modal">&times;</button>
+      <div class="modal-content">
+        <h3>Preview Demo Nova AI</h3>
+        <p class="modal-sub">Lihat bagaimana Nova AI mengeksekusi otomatisasi data dalam hitungan detik.</p>
+        <div class="video-mockup-screen">
+          <div class="video-play-state">
+            <div class="pulsing-play-btn">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+            <p>Klik untuk memutar demo interaktif</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
